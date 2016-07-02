@@ -1,0 +1,84 @@
+/* Basic styling */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #537893;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 26px;
+	padding: 20px 5px;
+	display: inline-block;
+	background-color: #B24353;
+	transition: all .3s;
+	width: 100%;
+	text-align: center;
+}
+
+a:hover {
+	background-color: #D97583;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px; 
+}
+
+/* Flexbox */
+
+.flex-nav ul {
+	border: 1px solid #094570;
+	margin: 0;
+	padding:0;
+	display: flex;
+}
+
+.flex-nav li {
+	flex: 3;
+}
+
+.flex-nav .social-media {
+	flex:1;
+}
+
+/* Responsive */
+
+@media all and (max-width: 1000px) {
+
+	.flex-nav ul {
+		flex-wrap: wrap;
+	}
+
+	.flex-nav li {
+		flex: 1 1 50%;
+	}
+
+	.flex-nav .social-media {
+		flex: 1 1 25%;
+	}
+
+}
+
+@media all and (max-width: 500px) {
+
+	.flex-nav li {
+		flex-basis: 100%;
+	}
+	
+}
